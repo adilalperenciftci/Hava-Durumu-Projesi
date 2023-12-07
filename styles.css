@@ -1,0 +1,82 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('https://wallpapercave.com/wp/qQa5Pd7.jpg') center/cover fixed #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1, #cityInput, #searchHistory h5, #forecast .card-title {
+    color: #333;
+}
+
+#weatherInfo, #forecast, #searchHistory {
+    margin-top: 20px;
+}
+
+#weatherInfo, #forecast .card, #searchHistory {
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#weatherInfo {
+    background: #e9ecef;
+}
+
+.card-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.card-text, #forecast .card-text {
+    font-size: 16px;
+}
+
+#searchHistory .btn, #forecast .card-title, #forecast .card-text {
+    font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container, #forecast, #searchHistory {
+        padding: 15px;
+    }
+
+    .card-text, #forecast .card-text {
+        font-size: 14px;
+    }
+
+    #forecast, #searchHistory {
+        position: static;
+        width: auto;
+        max-height: none;
+        margin-top: 20px;
+    }
+}
+
+#forecast, #searchHistory {
+    position: fixed;
+    top: 100px;
+    width: 250px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    overflow-y: auto;
+    max-height: 400px;
+}
+
+#searchHistory {
+    left: 20px;
+}
+
+#forecast {
+    right: 20px;
+}
